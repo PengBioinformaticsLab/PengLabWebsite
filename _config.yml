@@ -1,7 +1,9 @@
-name: "Fraser Lab"
-description: "This is the official web page for the James Fraser Lab at UCSF."
+name: "Gang Peng Lab"
+title: "Gang Peng Lab"
+description: "This is the official web page for the Gang Peng Lab at Indiana School of Medicine."
 
-url: "http://fraserlab.com"
+
+url: "http://sample_labsite.github.io"
 
 paginate: 5
 plugins: [jekyll-paginate]
