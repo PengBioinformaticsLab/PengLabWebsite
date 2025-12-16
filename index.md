@@ -4,16 +4,11 @@ layout: home
 group: home
 ---
 
-# Welcome to the Fraser Lab!
+# Welcome to the Peng Lab!
 {: .display-4}
 <br>
-We are part of the [Department of Bioengineering and Therapeutic Sciences](http://bts.ucsf.edu/), the [Macromolecular Structure Group](http://msg.ucsf.edu/), and the [California Institute of Quantitative Biosciences (QB3)](http://qb3.org/).
+We are part of the [Department of Medical and Molecular Genetics, Indiana University School of Medicine (IUSM)](https://medicine.iu.edu) and the [Center for Computational Biology and Bioinformatics](https://mc-34647c8d-0ad3-4e6c-832a-7092-cd.azurewebsites.net/research-centers/computational-biology-bioinformatics).
 {: .welcomefont}
 
-![Fraser lab logo](static/img/logo/jf_retreat_logo.svg){:style="max-width: 100%; height: auto;"}
 
-Research in the lab is focused on discovering the fundamental principles of macromolecular structure and dynamics.  We are interested in defining conformational states that are essential for function and understanding how conformational transitions couple to biological mechanisms.
-{: .welcomefont}
 
-We are located in Genentech Hall at the Mission Bay Campus of UCSF.
-{: .welcomefont}
