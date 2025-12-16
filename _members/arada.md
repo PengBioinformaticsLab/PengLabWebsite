@@ -2,8 +2,7 @@
 name: Jia Ji
 startdate: [2021-05-03]
 enddate: [2022-07-31]
-image: /static/img/members/arada.JPG #365 x 365 pixels, 72 dpi, JPG
-altimage: /static/img/members/arada_pb.jpg #365 x 365 pixels, 72 dpi, JPG
+image: /static/img/members/girl_1.jpg #365 x 365 pixels, 72 dpi, JPG
 position: Junior Specialist
 subsequent: Graduate Student - UCSF
 pronouns: she/her/hers

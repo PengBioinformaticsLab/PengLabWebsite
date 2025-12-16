@@ -10,25 +10,9 @@
   link: "/publications"
   group: publications
 
-- name: Reviews
-  link: "/reviews"
-  group: reviews
-
 - name: Members
   link: "/members"
   group: members
-
-- name: Teaching
-  link: "/courses"
-  group: courses
-
-- name: Philosophy
-  link: "/philosophy"
-  group: philosophy
-
-- name: News
-  link: "/news"
-  group: news
 
 - name: Join
   link: "/join"

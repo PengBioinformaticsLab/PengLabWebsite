@@ -1,18 +1,22 @@
 {% include header.html %}
-<div class="container">
-   <img class="img-fluid" src="/static/img/members/drawings/members/current_members.png" title="This wonderful illustration was courtesy of Jennifer Li" alt="Lab Group Illustration (credit Jennifer Li)">
-   <div class="row">
-       <div class="col-sm-9">
-           <br>
-           {{ content }}
+
+<div class="container mt-4">
+
+  <div class="row justify-content-center">
+    <div class="col-sm-9">
+
+      <!-- Optional: Grey card around content -->
+      <div class="card bg-light p-4 mb-4">
+
+        {{ content }}
+
+      </div>
+      <!-- End grey card -->
+
     </div>
-    <div class="col-sm-3 smalltxt">
-        <br>
-        {% capture sidebar %}{% include alumni_sidebar.md %}{% endcapture %}
-        {{ sidebar | markdownify }}
-    </div>
+  </div>
+
 </div>
-<br>
-<img class="img-fluid" src="/static/img/members/drawings/alumni/recent_alumni.jpg" alt="We miss our alumni!">
-</div>
+
 {% include footer.html %}
+
