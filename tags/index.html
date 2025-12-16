@@ -1,15 +1,20 @@
 ---
-title: Posts from the Fraser Lab sorted by tag
+title: Posts from the Peng Lab sorted by tag
 layout: post
 group: tags
 ---
 
-<ul>
-    {% for tag in site.tags %}
-    {% assign tag_slug = tag.tag-name | slugify: "raw" %}
-    <li>
-        <h2><a class="tag-link" href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
-                rel="category tag">{{ tag.tag-name }}</h2>
-    </li>
-    {% endfor %}
-</ul>
+<div class="d-flex flex-wrap gap-3">
+
+  {% for tag in site.tags %}
+    {% assign tag_slug = tag[0] | slugify: "raw" %}
+    <div class="card bg-light p-3">
+      <a class="tag-link text-decoration-none" 
+         href="{{ site.baseurl }}/tags/{{ tag_slug }}/" 
+         rel="category tag">
+         {{ tag[0] }}
+      </a>
+    </div>
+  {% endfor %}
+
+</div>
