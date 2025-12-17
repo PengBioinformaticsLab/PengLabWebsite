@@ -4,9 +4,9 @@ layout: home
 group: home
 ---
 <div class="card bg-light p-5 my-5 shadow-sm border"
-     style="max-width: 1100px; margin-left: auto; margin-right: auto;">
+     style="max-width: 1500px; margin-left: auto; margin-right: auto;">
 
-  <h1 class="display-4 font-weight-bold text-center mb-3">
+  <h1 class="display-6 font-weight-bold text-center mb-3">
     Welcome to the Peng Lab
   </h1>
 
