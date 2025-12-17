@@ -3,7 +3,7 @@ title: "Peng Lab"
 description: "This is the official web page for the Gang Peng Lab at Indiana School of Medicine."
 
 url: "http://sample_labsite.github.io"
-baseurl: "/sample_labsite"
+
 
 paginate: 5
 plugins: [jekyll-paginate]
