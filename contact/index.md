@@ -48,16 +48,14 @@ Indianapolis, IN<br>
 
 <h4>Lab Location</h4>
 
-<img
-src="{{ site.baseurl }}/static/img/map_to_mission_bay.png"
-alt="HITS Building, Indiana University School of Medicine"
-class="img-fluid rounded shadow-sm mb-3"
-style="max-height: 300px;">
-
 <p>
-HITS Building<br>
+<strong>HITS Building</strong><br>
 410 W 10th St<br>
-Indianapolis, IN
+Indianapolis, IN<br>
+<a href="https://www.google.com/maps?q=HITS+Building+410+W+10th+St+Indianapolis+IN"
+   target="_blank">
+View on Google Maps →
+</a>
 </p>
 
 </div>
