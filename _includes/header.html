@@ -19,25 +19,54 @@
 
   <body>
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4a6fa5">
-        <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
-        <a href="https://medicine.iu.edu"><img class="inline-block navb-icon" src="{{ site.baseurl }}/static/img/logo/Indiana_Hoosiers_logo.svg.png" alt="Indiana University School of Medicine"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto">
-            {% for link in site.data.navigation %}
-              {% if page.group == link.group %}
-                <li class = "nav-item active"><a class="nav-link" href="{{link.link}}" alt="{{link.name}}"> {{link.name}}<span class="sr-only">(current)</span></a></li>
-              {% else %}
-                <li class="nav-item"><a class="nav-link" href="{{link.link}}" alt="{{link.name}}"> {{link.name}}</a></li>
-              {% endif %}
-            {% endfor %}
-            
-          </ul>
-        </div><!--/.nav-collapse -->
-      </nav>
 
-    <div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4a6fa5; padding-top: 0.8rem; padding-bottom: 0.8rem;">
+      <!-- Site brand -->
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+
+      <!-- External logo -->
+      <a href="https://medicine.iu.edu" target="_blank" rel="noopener">
+          <img class="inline-block navb-icon" src="{{ site.baseurl }}/static/img/logo/Indiana_Hoosiers_logo.svg.png" alt="Indiana University School of Medicine">
+      </a>
+
+      <!-- Navbar toggler for small screens -->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+              {% for link in site.data.navigation %}
+                  {% assign full_link = site.baseurl | append: link.link %}
+                  {% if page.group == link.group %}
+                      <li class="nav-item active">
+                          <a class="nav-link" href="{{ full_link }}" alt="{{ link.name }}">
+                              {{ link.name }} <span class="sr-only">(current)</span>
+                          </a>
+                      </li>
+                  {% else %}
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ full_link }}" alt="{{ link.name }}">
+                              {{ link.name }}
+                          </a>
+                      </li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container px-2">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="jumbotron h-100">
+            {{ content }}
+          </div>
+        </div>
+        <div class="col">
+          {% include contact_sidebar.html %}
+        </div>
+      </div>
