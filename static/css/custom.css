@@ -52,6 +52,12 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+/* 🔴 CHANGE #3: THIS BREAKS MAP OUT OF PAGE CONTAINER */
+.full-width-map {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 80vh
+}
 
 /*
 body {

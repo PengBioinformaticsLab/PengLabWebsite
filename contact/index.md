@@ -8,7 +8,7 @@ group: contact
 
 <h1>Contact the Peng Lab</h1>
 
-<div class="row mt-4 gx-5">
+<div class="row mt-4 gx-10">
 
 <div class="col-md-4 mb-4">
 <h4>Lab Location</h4>
@@ -42,6 +42,64 @@ Indianapolis, IN <br>
 
 </div>
 
+<!-- ===================== -->
+<!-- FULL-WIDTH MAP -->
+<!-- ===================== -->
+<div class="full-width-map">
+
+  <h4 class="text-center mb-3">Lab Location</h4>
+
+  <p class="text-center">
+    <strong>HITS Building</strong><br>
+    410 W 10th St<br>
+    Indianapolis, IN<br>
+    <a href="https://www.google.com/maps?q=HITS+Building+410+W+10th+St+Indianapolis+IN"
+       target="_blank">
+      View on Google Maps →
+    </a>
+  </p>
+
+  <div class="ratio" style="--bs-aspect-ratio: 75%;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.122661349147!2d-86.16955912320681!3d39.7818025715489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50cf0555b231%3A0xcd0b5c5176867edf!2sIU%20Health%20Information%20and%20Translational%20Sciences!5e0!3m2!1sen!2sus!4v1765946184975!5m2!1sen!2sus"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</div>
+
+<!-- 
+
+<div class="full-width-map">
+
+<h4 class="text-center mb-3">Lab Location</h4>
+
+<p class="text-center">
+  <strong>HITS Building</strong><br>
+  410 W 10th St<br>
+  Indianapolis, IN<br>
+  <a href="https://www.google.com/maps?q=HITS+Building+410+W+10th+St+Indianapolis+IN"
+      target="_blank">
+    View on Google Maps →
+  </a>
+</p>
+
+<div class="ratio" style="--bs-aspect-ratio: 70%;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.122661349147!2d-86.16955912320681!3d39.7818025715489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50cf0555b231%3A0xcd0b5c5176867edf!2sIU%20Health%20Information%20and%20Translational%20Sciences!5e0!3m2!1sen!2sus!4v1765946184975!5m2!1sen!2sus"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+</div>
+
+
 <hr class="my-4">
 
 <div class="row justify-content-center">
@@ -59,7 +117,9 @@ Indianapolis, IN <br>
   </a>
 </p>
 
-<!-- Google Map (Bootstrap 5 compatible) -->
+-->
+
+<!-- Google Map (Bootstrap 5 compatible) 
 <div class="ratio mb-3" style="--bs-aspect-ratio: 70%;">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.122661349147!2d-86.16955912320681!3d39.7818025715489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50cf0555b231%3A0xcd0b5c5176867edf!2sIU%20Health%20Information%20and%20Translational%20Sciences!5e0!3m2!1sen!2sus!4v1765946184975!5m2!1sen!2sus"
@@ -75,3 +135,4 @@ Indianapolis, IN <br>
 </div>
 
 </div>
+-->
