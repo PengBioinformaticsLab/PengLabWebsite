@@ -5,7 +5,7 @@ group: join
 ---
 <div class="mx-auto" style="max-width: 1000px; padding: 2rem 1rem;">
 
-# Join the Peng Lab
+# Join Us
 
 We are always eager to connect with enthusiastic and curious individuals who are passionate about science. Whether you are an experienced researcher or just starting your journey, we encourage you to reach out and share your interests, background, and goals. Our lab values collaboration, creativity, and diversity, and we are committed to providing a supportive environment where you can grow your skills and explore new ideas. If you are interested in joining our team or simply learning more about our work, please don’t hesitate to contact us — we would be delighted to hear from you.
 

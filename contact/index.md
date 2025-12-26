@@ -6,7 +6,7 @@ group: contact
 
 <div class="mx-auto" style="max-width: 900px; padding: 2rem 1rem;">
 
-<h1 class="text-center">Contact the Peng Lab</h1>
+<h1 class="text-center">Contact</h1>
 
 <div class="row mt-4 gx-10">
 
