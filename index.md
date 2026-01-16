@@ -7,7 +7,7 @@ group: home
      style="max-width: 1500px; margin-left: auto; margin-right: auto;">
 
   <h1 class="display-6 font-weight-bold text-center mb-3">
-    Welcome to the Peng Lab
+    Welcome to the Peng Lab (TESTING)
   </h1>
 
   <p class="lead text-center text-muted mb-4">
