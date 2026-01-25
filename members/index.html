@@ -7,63 +7,65 @@ group: members
 <h1 class="text-center mb-5">Members</h1>
 
 <style>
-/* Page container */
+/* Page wrapper */
 .members-wrapper {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 3rem;   /* MORE SPACE LEFT & RIGHT */
+  padding: 0 2rem;
 }
 
-/* Section titles */
+/* Section headings */
 .members-wrapper h2 {
-  text-align: center;
-  margin: 3rem 0 1.5rem;
+  margin: 3rem 0 1rem;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
-
-/* Individual member card */
-.member-card {
-  text-align: center;
-}
-
-/* Member images — SQUARE, NO GREY */
-.member-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 0;        /* SQUARE */
-}
-
-/* Name text */
-.member-name {
-  margin-top: 0.7rem;
-  font-weight: 500;
-}
-
-/* Alumni list */
-.alumni-list {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.alumni-list p {
-  margin: 0.5rem 0;
-}
-
-.member-grid {
+/* Individual member row */
+.member-row {
   display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-  background: transparent;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-/* REMOVE ALL GREY BOXES */
-.member-grid,
-.member-card {
+/* Member image */
+.member-row img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-right: 1.5rem;
+}
+
+/* Member info */
+.member-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Member name + links */
+.member-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Optional links (LinkedIn, profile, etc.) */
+.member-links a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+/* Dates / role */
+.member-dates {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Remove all background boxes */
+.member-row,
+.member-info {
   background: transparent !important;
-  border: none !important;
   box-shadow: none !important;
 }
 </style>
@@ -72,76 +74,105 @@ group: members
 
 <!-- ================= PI ================= -->
 <h2>Principal Investigator</h2>
-<div class="member-grid">
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Gang Peng photo">
-    <div class="member-name">Gang Peng, Ph.D.</div>
+<div class="member-row">
+  <a href="/pi.html"> <!-- link to separate PI page -->
+    <img src="{{ site.baseurl }}/static/img/members/DrPeng.png" alt="Gang Peng photo">
+  </a>
+  <div class="member-info">
+    <div class="member-name">
+      <a href="/pi.html">Gang Peng, Ph.D.</a>
+      <span class="member-links">
+        <a href="https://github.com/PengBioinformaticsLab" target="_blank">
+          <img src="{{ site.baseurl }}/static/img/icons/github.svg" alt="GitHub" width="16">
+        </a>
+      </span>
+    </div>
+    <div class="member-dates">Principal Investigator | 01/2000 – Present</div>
   </div>
 </div>
 
-<!-- ================= Bioinformatics Researchers ================= -->
+<!-- ================= Researchers ================= -->
 <h2>Bioinformatics Researchers</h2>
-<div class="member-grid">
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Researcher photo">
-    <div class="member-name">John</div>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Researcher photo">
+  <div class="member-info">
+    <div class="member-name">Jia Ji</div>
+    <div class="member-dates">01/2023 – Present</div>
   </div>
+</div>
 
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Researcher photo">
-    <div class="member-name">Jessie</div>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Researcher photo">
+  <div class="member-info">
+    <div class="member-name">Steven Brooks</div>
+    <div class="member-dates">01/2023 – Present</div>
   </div>
 </div>
 
 <!-- ================= PhD Students ================= -->
 <h2>PhD Students</h2>
-<div class="member-grid">
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="PhD student photo">
-    <div class="member-name">Jia</div>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="PhD student photo">
+  <div class="member-info">
+    <div class="member-name">Eric Wang</div>
+    <div class="member-dates">01/2024 – Present</div>
   </div>
+</div>
 
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="PhD student photo">
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="PhD student photo">
+  <div class="member-info">
     <div class="member-name">Sarah</div>
+    <div class="member-dates">09/2025 – Present</div>
   </div>
 </div>
 
 <!-- ================= Masters Students ================= -->
 <h2>Master’s Students</h2>
-<div class="member-grid">
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Masters student photo">
-    <div class="member-name">Pia</div>
-  </div>
-
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Masters student photo">
-    <div class="member-name">Tia</div>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Masters student photo">
+  <div class="member-info">
+    <div class="member-name">Jnana Deepthi Vishnumolakala</div>
+    <div class="member-dates">01/2025 – Present</div>
   </div>
 </div>
 
 <!-- ================= Undergraduate Students ================= -->
 <h2>Undergraduate Students</h2>
-<div class="member-grid">
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Undergraduate student photo">
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/blank.png" alt="Undergraduate student photo">
+  <div class="member-info">
     <div class="member-name">Kiran</div>
+    <div class="member-dates">09/2025 – Present</div>
   </div>
+</div>
 
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.jpg" alt="Undergraduate student photo">
-    <div class="member-name">Piyush</div>
+<!-- ================= Advisory Committee ================= -->
+<h2>Advisory Committee</h2>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Advisory member photo">
+  <div class="member-info">
+    <div class="member-name">Ishita Debnath</div>
+    <div class="member-dates">06/2025 – Present</div>
   </div>
 </div>
 
 <!-- ================= Alumni ================= -->
 <h2>Alumni</h2>
-<div class="alumni-list">
-  <p>Name 1</p>
-  <p>Name 2</p>
-  <p>Name 3</p>
-  <p>Name 4</p>
+<div class="member-row">
+  
+  <div class="member-info">
+    <div class="member-name">Lilian Rubino</div>
+    <div class="member-dates">05/2025 – 07/2025</div>
+  </div>
+</div>
+
+<div class="member-row">
+  
+  <div class="member-info">
+    <div class="member-name">Daniel Shames</div>
+    <div class="member-dates">05/2025 – 07/2025</div>
+  </div>
 </div>
 
 </div>
