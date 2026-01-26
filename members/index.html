@@ -10,11 +10,17 @@ group: members
 /* ===========================
    GLOBAL OVERRIDES (kill grey boxes from theme)
    =========================== */
+body,
 .members-wrapper,
 .member-row,
 .member-info,
-.member-row * {
+.member-row *,
+.container,
+.content,
+main,
+section {
   background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
   border: none !important;
 }
@@ -84,20 +90,19 @@ group: members
 /* ===========================
    Compact Alumni layout
    =========================== */
-   .members-wrapper h2 + .member-row {
-  margin-top: 0.5rem;
+.members-wrapper h2:last-of-type + .member-row,
+.members-wrapper h2:last-of-type ~ .member-row {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
 }
 
-.members-wrapper h2 ~ .member-row {
-  margin: 0.35rem 0;   /* VERY small vertical gap */
-}
-
-.members-wrapper h2 ~ .member-row .member-name {
+.members-wrapper h2:last-of-type ~ .member-row .member-name {
   font-size: 1.05rem;
   font-weight: 500;
 }
 
-.members-wrapper h2 ~ .member-row .member-dates {
+.members-wrapper h2:last-of-type ~ .member-row .member-dates {
   font-size: 0.9rem;
   line-height: 1.2;
 }
@@ -170,7 +175,7 @@ group: members
 </div>
 
 <!-- ================= Masters Students ================= -->
-<h2>Master’s Students</h2>
+<h2>Master's Students</h2>
 <div class="member-row">
   <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Masters student photo">
   <div class="member-info">
