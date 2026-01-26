@@ -7,68 +7,74 @@ group: members
 <h1 class="text-center mb-5">Members</h1>
 
 <style>
-/* Page wrapper */
-.members-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-/* Section headings */
-.members-wrapper h2 {
-  margin: 3rem 0 1rem;
-  text-align: left;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
-}
-
-/* Individual member row */
-.member-row {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-}
-
-/* Member image */
-.member-row img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 0;
-  margin-right: 1.5rem;
-}
-
-/* Member info */
-.member-info {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Member name + links */
-.member-name {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-/* Optional links (LinkedIn, profile, etc.) */
-.member-links a {
-  margin-left: 0.5rem;
-  text-decoration: none;
-}
-
-/* Dates / role */
-.member-dates {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Remove all background boxes */
-.member-row,
-.member-info {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-</style>
+  /* ===========================
+     Page wrapper
+     =========================== */
+  .members-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background: transparent !important; /* remove grey */
+  }
+  
+  /* Section headings */
+  .members-wrapper h2 {
+    margin: 3rem 0 1rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    background: transparent !important;
+  }
+  
+  /* Individual member row */
+  .member-row {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    background: transparent !important; /* remove grey box */
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0;
+  }
+  
+  /* Member image */
+  .member-row img {
+    width: 150px;   /* bigger image */
+    height: 150px;  /* bigger image */
+    object-fit: cover;
+    border-radius: 0;
+    margin-right: 1.5rem;
+    background: transparent !important; /* remove grey */
+  }
+  
+  /* Member info */
+  .member-info {
+    display: flex;
+    flex-direction: column;
+    background: transparent !important; /* remove grey */
+    box-shadow: none !important;
+    padding: 0;
+  }
+  
+  /* Member name + links */
+  .member-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  /* Optional links (LinkedIn, profile, etc.) */
+  .member-links a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Dates / role */
+  .member-dates {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  </style>
+  
 
 <div class="members-wrapper">
 
@@ -78,16 +84,9 @@ group: members
   <a href="/pi.html"> <!-- link to separate PI page -->
     <img src="{{ site.baseurl }}/static/img/members/DrPeng.png" alt="Gang Peng photo">
   </a>
-  <div class="member-info">
-    <div class="member-name">
-      <a href="/pi.html">Gang Peng, Ph.D.</a>
-      <span class="member-links">
-        <a href="https://github.com/PengBioinformaticsLab" target="_blank">
-          <img src="{{ site.baseurl }}/static/img/icons/github.svg" alt="GitHub" width="16">
-        </a>
-      </span>
+  
     </div>
-    <div class="member-dates">Principal Investigator | 01/2000 – Present</div>
+    
   </div>
 </div>
 
@@ -140,7 +139,7 @@ group: members
 <!-- ================= Undergraduate Students ================= -->
 <h2>Undergraduate Students</h2>
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/blank.png" alt="Undergraduate student photo">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
   <div class="member-info">
     <div class="member-name">Kiran</div>
     <div class="member-dates">09/2025 – Present</div>
