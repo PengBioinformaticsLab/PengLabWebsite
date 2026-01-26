@@ -1,24 +1,19 @@
 ---
 title: Gang Peng Lab Members
-layout: default   <!-- IMPORTANT: switch from 'members' to 'default' -->
+layout: members
+group: members
 ---
 
 <h1 class="text-center mb-5">Members</h1>
 
 <style>
 /* ===========================
-   HARD RESET – REMOVE GREY BOXES FROM THEME
+   GLOBAL OVERRIDES (kill grey boxes from theme)
    =========================== */
-body,
-.page-content,
-.wrapper,
-.container,
-.content,
-main,
-section,
-article,
 .members-wrapper,
-.members-wrapper * {
+.member-row,
+.member-info,
+.member-row * {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
@@ -38,28 +33,30 @@ article,
    =========================== */
 .members-wrapper h2 {
   margin: 3rem 0 1.5rem;
+  text-align: left;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
 }
 
 /* ===========================
-   Member row
+   Member row (horizontal layout)
    =========================== */
 .member-row {
   display: flex;
   align-items: center;
-  margin: 1.5rem 0;
+  margin: 1.8rem 0;
+  padding: 0;
 }
 
 /* ===========================
-   Member image – NO CROPPING
+   Member image (NO CROPPING)
    =========================== */
 .member-row img {
-  width: 200px;
-  height: auto;
-  max-height: 280px;
-  object-fit: contain;
-  margin-right: 2rem;
+  width: 180px;          /* larger image */
+  height: auto;          /* natural height */
+  max-height: 260px;     /* safety cap */
+  object-fit: contain;   /* IMPORTANT: no head cutting */
+  margin-right: 1.8rem;
   display: block;
 }
 
@@ -71,19 +68,10 @@ article,
   flex-direction: column;
 }
 
+/* Name */
 .member-name {
-  font-size: 1.25rem;
   font-weight: 600;
-}
-
-/* Clickable blue name */
-.member-name a {
-  color: #1a73e8;
-  text-decoration: none;
-}
-
-.member-name a:hover {
-  text-decoration: underline;
+  font-size: 1.25rem;
 }
 
 /* Dates */
@@ -92,11 +80,35 @@ article,
   color: #555;
 }
 
+
 /* ===========================
-   PI CENTERED
+   Compact Alumni layout
+   =========================== */
+   .members-wrapper h2 + .member-row {
+  margin-top: 0.5rem;
+}
+
+.members-wrapper h2 ~ .member-row {
+  margin: 0.35rem 0;   /* VERY small vertical gap */
+}
+
+.members-wrapper h2 ~ .member-row .member-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.members-wrapper h2 ~ .member-row .member-dates {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+
+/* ===========================
+   PI specific styling (CENTERED)
    =========================== */
 .pi-row {
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -109,7 +121,7 @@ article,
 }
 </style>
 
-<div class="members-wrapper">
+
 
 <!-- ================= PI ================= -->
 <h2>Principal Investigator</h2>
@@ -126,11 +138,13 @@ article,
   </div>
 </div>
 
+
+
+
 <!-- ================= Researchers ================= -->
 <h2>Bioinformatics Researchers</h2>
-
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Researcher photo">
   <div class="member-info">
     <div class="member-name">Jia Ji</div>
     <div class="member-dates">01/2023 – Present</div>
@@ -138,7 +152,7 @@ article,
 </div>
 
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Researcher photo">
   <div class="member-info">
     <div class="member-name">Steven Brooks</div>
     <div class="member-dates">01/2023 – Present</div>
@@ -147,9 +161,8 @@ article,
 
 <!-- ================= PhD Students ================= -->
 <h2>PhD Students</h2>
-
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="PhD student photo">
   <div class="member-info">
     <div class="member-name">Eric Wang</div>
     <div class="member-dates">01/2024 – Present</div>
@@ -158,9 +171,8 @@ article,
 
 <!-- ================= Masters Students ================= -->
 <h2>Master’s Students</h2>
-
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Masters student photo">
   <div class="member-info">
     <div class="member-name">Jnana Deepthi Vishnumolakala</div>
     <div class="member-dates">01/2025 – Present</div>
@@ -169,9 +181,8 @@ article,
 
 <!-- ================= Undergraduate Students ================= -->
 <h2>Undergraduate Students</h2>
-
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
   <div class="member-info">
     <div class="member-name">Trinity Burchett</div>
     <div class="member-dates">09/2025 – Present</div>
@@ -179,10 +190,39 @@ article,
 </div>
 
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
   <div class="member-info">
     <div class="member-name">Graham Richards</div>
     <div class="member-dates">09/2025 – Present</div>
+  </div>
+</div>
+
+<!-- ================= High School Students ================= -->
+<h2>High School Students</h2>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
+  <div class="member-info">
+    <div class="member-name">Wenshu Wang</div>
+    <div class="member-dates">05/2024 – Present</div>
+  </div>
+</div>
+
+
+<!-- ================= Advisory Committee ================= -->
+<h2>Advisory Committee - PhD Candidate</h2>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Advisory member photo">
+  <div class="member-info">
+    <div class="member-name">Ishita Debnath</div>
+    <div class="member-dates">06/2025 – Present</div>
+  </div>
+</div>
+
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Advisory member photo">
+  <div class="member-info">
+    <div class="member-name">Andrew Hennigan </div>
+    <div class="member-dates">11/2024 – Present</div>
   </div>
 </div>
 
@@ -192,8 +232,115 @@ article,
 <div class="member-row">
   <div class="member-info">
     <div class="member-name">Daniel Shames (Undergraduate)</div>
-    <div class="member-dates">05/2025 – 07/2025</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 05/2025 – 07/2025
+    </div>
   </div>
 </div>
+
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Lilian Rubino (High School)</div>
+    <div class="member-dates">
+      Advisor of High School Student · 05/2025 – 07/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name"> Kevin Chen (High School)</div>
+    <div class="member-dates">
+      Advisor of High School Student · 01/2023 – 07/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Hadeel Mahariq (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2024 – 05/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Jasleen K Randhawa (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2024 – 05/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Kailing Li (PhD Candidate)</div>
+    <div class="member-dates">
+      Advisory Committee · 03/2023 – 12/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Steven Brooks (MS)</div>
+    <div class="member-dates">
+      Advisor of Graduate Student · 01/2024 – 12/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Gabriel Ramirez (BS)</div>
+    <div class="member-dates">
+      Advisor of Student in Postbaccalaureate Research Experience Program · 01/2024 – 05/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Lauren Hite (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2023 – 05/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Noura Aly (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2023 – 05/2024
+    </div>
+  </div>
+</div>
+
+
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Martha Jane Scannell (PhD Student)</div>
+    <div class="member-dates">
+      Advisor of Student on Research Rotation · 03/2023 – 04/2023
+    </div>
+  </div>
+</div>
+
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Yvonne Wang (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 05/2022 – 08/2022
+    </div>
+  </div>
+</div>
+
+
 
 </div>
