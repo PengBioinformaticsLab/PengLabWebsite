@@ -8,18 +8,25 @@ group: members
 
 <style>
 /* ===========================
-   GLOBAL OVERRIDES (kill grey boxes from theme)
+   NUCLEAR OPTION - Kill ALL backgrounds and boxes
    =========================== */
+* {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
 body,
+html,
 .members-wrapper,
 .member-row,
 .member-info,
-.member-row *,
 .container,
 .content,
 main,
-section {
-  background: transparent !important;
+section,
+div {
+  background: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
   border: none !important;
@@ -40,7 +47,7 @@ section {
 .members-wrapper h2 {
   margin: 3rem 0 1.5rem;
   text-align: left;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #ccc !important;
   padding-bottom: 0.5rem;
 }
 
@@ -58,10 +65,10 @@ section {
    Member image (NO CROPPING)
    =========================== */
 .member-row img {
-  width: 180px;          /* larger image */
-  height: auto;          /* natural height */
-  max-height: 260px;     /* safety cap */
-  object-fit: contain;   /* IMPORTANT: no head cutting */
+  width: 180px;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
   margin-right: 1.8rem;
   display: block;
 }
@@ -86,27 +93,37 @@ section {
   color: #555;
 }
 
-
 /* ===========================
-   Compact Alumni layout
+   ALUMNI - ZERO SPACING
    =========================== */
-.members-wrapper h2:last-of-type + .member-row,
-.members-wrapper h2:last-of-type ~ .member-row {
-  margin: 0;
-  padding: 0;
-  line-height: 1.4;
+.members-wrapper h2:nth-last-of-type(1) {
+  margin-bottom: 0.5rem;
 }
 
-.members-wrapper h2:last-of-type ~ .member-row .member-name {
+.members-wrapper h2:nth-last-of-type(1) ~ .member-row {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.3;
+}
+
+.members-wrapper h2:nth-last-of-type(1) ~ .member-row .member-name {
   font-size: 1.05rem;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 
-.members-wrapper h2:last-of-type ~ .member-row .member-dates {
+.members-wrapper h2:nth-last-of-type(1) ~ .member-row .member-dates {
   font-size: 0.9rem;
   line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
 
+.members-wrapper h2:nth-last-of-type(1) ~ .member-row .member-info {
+  margin: 0;
+  padding: 0;
+}
 
 /* ===========================
    PI specific styling (CENTERED)
@@ -126,7 +143,7 @@ section {
 }
 </style>
 
-
+<div class="members-wrapper">
 
 <!-- ================= PI ================= -->
 <h2>Principal Investigator</h2>
@@ -243,7 +260,6 @@ section {
   </div>
 </div>
 
-
 <div class="member-row">
   <div class="member-info">
     <div class="member-name">Lilian Rubino (High School)</div>
@@ -325,8 +341,6 @@ section {
   </div>
 </div>
 
-
-
 <div class="member-row">
   <div class="member-info">
     <div class="member-name">Martha Jane Scannell (PhD Student)</div>
@@ -336,7 +350,6 @@ section {
   </div>
 </div>
 
-
 <div class="member-row">
   <div class="member-info">
     <div class="member-name">Yvonne Wang (Undergraduate)</div>
@@ -345,7 +358,5 @@ section {
     </div>
   </div>
 </div>
-
-
 
 </div>
