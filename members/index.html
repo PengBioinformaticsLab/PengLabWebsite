@@ -7,100 +7,113 @@ group: members
 <h1 class="text-center mb-5">Members</h1>
 
 <style>
-  /* ===========================
-     Page wrapper
-     =========================== */
-  .members-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    background: transparent !important; /* remove grey */
-  }
-  
-  /* Section headings */
-  .members-wrapper h2 {
-    margin: 3rem 0 1rem;
-    text-align: left;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.5rem;
-    background: transparent !important;
-  }
-  
-  /* Individual member row */
-  .member-row {
-    display: flex;
-    align-items: center;
-    margin: 1.5rem 0;
-    background: transparent !important; /* remove grey box */
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0;
-  }
-  
-  /* Member image */
-  .member-row img {
-    width: 150px;   /* bigger image */
-    height: 150px;  /* bigger image */
-    object-fit: cover;
-    border-radius: 0;
-    margin-right: 1.5rem;
-    background: transparent !important; /* remove grey */
-  }
-  
-  /* Member info */
-  .member-info {
-    display: flex;
-    flex-direction: column;
-    background: transparent !important; /* remove grey */
-    box-shadow: none !important;
-    padding: 0;
-  }
-  
-  /* Member name + links */
-  .member-name {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-  
-  /* Optional links (LinkedIn, profile, etc.) */
-  .member-links a {
-    margin-left: 0.5rem;
-    text-decoration: none;
-  }
-  
-  /* Dates / role */
-  .member-dates {
-    font-size: 0.95rem;
-    color: #555;
-  }
-  </style>
-  
+/* ===========================
+   GLOBAL OVERRIDES (kill grey boxes from theme)
+   =========================== */
+.members-wrapper,
+.member-row,
+.member-info,
+.member-row * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ===========================
+   Page wrapper
+   =========================== */
+.members-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===========================
+   Section headings
+   =========================== */
+.members-wrapper h2 {
+  margin: 3rem 0 1.5rem;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* ===========================
+   Member row (horizontal layout)
+   =========================== */
+.member-row {
+  display: flex;
+  align-items: center;
+  margin: 1.8rem 0;
+  padding: 0;
+}
+
+/* ===========================
+   Member image (NO CROPPING)
+   =========================== */
+.member-row img {
+  width: 180px;          /* larger image */
+  height: auto;          /* natural height */
+  max-height: 260px;     /* safety cap */
+  object-fit: contain;   /* IMPORTANT: no head cutting */
+  margin-right: 1.8rem;
+  display: block;
+}
+
+/* ===========================
+   Member info
+   =========================== */
+.member-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name */
+.member-name {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Dates */
+.member-dates {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===========================
+   PI specific styling (CENTERED)
+   =========================== */
+.pi-row {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.pi-row img {
+  margin: 0 auto 1rem;
+}
+
+.pi-row .member-info {
+  align-items: center;
+}
+</style>
 
 <div class="members-wrapper">
 
 <!-- ================= PI ================= -->
 <h2>Principal Investigator</h2>
-<div class="member-row">
-  <a href="/pi.html"> <!-- link to separate PI page -->
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.png" alt="Gang Peng photo">
-  </a>
-  
-    </div>
-    
-  </div>
-</div>
 
-
-<!-- ================= PI ================= -->
-<h2>Principal Investigator</h2>
-<div class="member-row">
-  <a href="/pi.html"> <!-- link to separate PI page -->
+<div class="member-row pi-row">
+  <a href="/pi.html">
     <img src="{{ site.baseurl }}/static/img/members/DrPeng.png" alt="Gang Peng photo">
   </a>
   <div class="member-info">
     <div class="member-name">Dr. Gang Peng</div>
   </div>
 </div>
+
+</div>
+
 
 <!-- ================= Researchers ================= -->
 <h2>Bioinformatics Researchers</h2>
@@ -130,14 +143,6 @@ group: members
   </div>
 </div>
 
-<div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="PhD student photo">
-  <div class="member-info">
-    <div class="member-name">Sarah</div>
-    <div class="member-dates">09/2025 – Present</div>
-  </div>
-</div>
-
 <!-- ================= Masters Students ================= -->
 <h2>Master’s Students</h2>
 <div class="member-row">
@@ -153,13 +158,32 @@ group: members
 <div class="member-row">
   <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
   <div class="member-info">
-    <div class="member-name">Kiran</div>
+    <div class="member-name">Trinity Burchett</div>
     <div class="member-dates">09/2025 – Present</div>
   </div>
 </div>
 
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
+  <div class="member-info">
+    <div class="member-name">Graham Richards</div>
+    <div class="member-dates">09/2025 – Present</div>
+  </div>
+</div>
+
+<!-- ================= High School Students ================= -->
+<h2>High School Students</h2>
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
+  <div class="member-info">
+    <div class="member-name">Wenshu Wang</div>
+    <div class="member-dates">05/2024 – Present</div>
+  </div>
+</div>
+
+
 <!-- ================= Advisory Committee ================= -->
-<h2>Advisory Committee</h2>
+<h2>Advisory Committee - PhD Candidate</h2>
 <div class="member-row">
   <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Advisory member photo">
   <div class="member-info">
@@ -168,21 +192,122 @@ group: members
   </div>
 </div>
 
+<div class="member-row">
+  <img src="{{ site.baseurl }}/static/img/members/Women_blank.jpg" alt="Advisory member photo">
+  <div class="member-info">
+    <div class="member-name">Andrew Hennigan </div>
+    <div class="member-dates">11/2024 – Present</div>
+  </div>
+</div>
+
 <!-- ================= Alumni ================= -->
 <h2>Alumni</h2>
+
 <div class="member-row">
-  
   <div class="member-info">
-    <div class="member-name">Lilian Rubino</div>
-    <div class="member-dates">05/2025 – 07/2025</div>
+    <div class="member-name">Martha Jane Scannell (PhD Student)</div>
+    <div class="member-dates">
+      Advisor of Student on Research Rotation · 03/2023 – 04/2023
+    </div>
   </div>
 </div>
 
 <div class="member-row">
-  
   <div class="member-info">
-    <div class="member-name">Daniel Shames</div>
-    <div class="member-dates">05/2025 – 07/2025</div>
+    <div class="member-name">Kailing Li (PhD Candidate)</div>
+    <div class="member-dates">
+      Advisory Committee · 03/2023 – 12/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Steven Brooks (MS)</div>
+    <div class="member-dates">
+      Advisor of Graduate Student · 01/2024 – 12/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Gabriel Ramirez (BS)</div>
+    <div class="member-dates">
+      Advisor of Student in Postbaccalaureate Research Experience Program · 01/2024 – 05/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Daniel Shames (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 05/2025 – 07/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Yvonne Wang (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 05/2022 – 08/2022
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Lauren Hite (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2023 – 05/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Noura Aly (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2023 – 05/2024
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Hadeel Mahariq (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2024 – 05/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Jasleen K Randhawa (Undergraduate)</div>
+    <div class="member-dates">
+      Advisor of Undergraduate Student · 09/2024 – 05/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name">Lilian Rubino (High School)</div>
+    <div class="member-dates">
+      Advisor of High School Student · 05/2025 – 07/2025
+    </div>
+  </div>
+</div>
+
+<div class="member-row">
+  <div class="member-info">
+    <div class="member-name"> Kevin Chen (High School)</div>
+    <div class="member-dates">
+      Advisor of High School Student · 01/2023 – 07/2025
+    </div>
   </div>
 </div>
 
