@@ -4,12 +4,15 @@ layout: members
 group: members
 ---
 
-<h1 class="text-center mb-5">Members</h1>
 
 <style>
 /* ===========================
-   TARGETED grey box removal (don't kill navigation)
+   AGGRESSIVE grey box removal
    =========================== */
+body {
+  background: white !important;
+}
+
 .members-wrapper,
 .members-wrapper *:not(a):not(img),
 .member-row,
@@ -19,12 +22,23 @@ group: members
   box-shadow: none !important;
 }
 
-/* Kill specific container backgrounds */
+/* Kill ALL possible container backgrounds */
 main,
 .content,
-.container {
+.container,
+.page-content,
+.wrapper,
+article,
+section,
+.post-content,
+.entry-content,
+#main,
+#content,
+.main-content {
   background: transparent !important;
   background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* ===========================
