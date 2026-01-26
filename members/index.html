@@ -8,28 +8,23 @@ group: members
 
 <style>
 /* ===========================
-   NUCLEAR OPTION - Kill ALL backgrounds and boxes
+   TARGETED grey box removal (don't kill navigation)
    =========================== */
-* {
-  background: none !important;
+.members-wrapper,
+.members-wrapper *:not(a):not(img),
+.member-row,
+.member-info {
+  background: transparent !important;
   background-color: transparent !important;
   box-shadow: none !important;
 }
 
-body,
-html,
-.members-wrapper,
-.member-row,
-.member-info,
-.container,
-.content,
+/* Kill specific container backgrounds */
 main,
-section,
-div {
-  background: none !important;
+.content,
+.container {
+  background: transparent !important;
   background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
 }
 
 /* ===========================
@@ -47,7 +42,7 @@ div {
 .members-wrapper h2 {
   margin: 3rem 0 1.5rem;
   text-align: left;
-  border-bottom: 2px solid #ccc !important;
+  border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
 }
 
@@ -59,6 +54,7 @@ div {
   align-items: center;
   margin: 1.8rem 0;
   padding: 0;
+  border: none !important;
 }
 
 /* ===========================
