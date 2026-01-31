@@ -14,6 +14,10 @@
   link: "/members"
   group: members
 
+- name: Teaching
+  link: "/teaching"
+  group: teaching
+
 - name: Join
   link: "/join"
   group: join
