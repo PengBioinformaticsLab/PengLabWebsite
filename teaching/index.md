@@ -1,8 +1,8 @@
-# Teaching
-
-## Graduate Teaching Assignments
 
 <div style="margin-left: 20px; margin-top: 15px;">
+
+  <h1>Teaching</h1>
+  <h2>Graduate Teaching Assignments</h2>
 
 <table style="border-collapse: collapse; width: 85%; table-layout: auto; font-size: 14px;">
 
