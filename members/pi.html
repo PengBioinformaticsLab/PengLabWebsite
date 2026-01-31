@@ -7,10 +7,11 @@ layout: default
 /* ===========================
    Clean PI page styling
    =========================== */
+
 .pi-wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .pi-header {
@@ -18,12 +19,14 @@ layout: default
   align-items: center;
   gap: 2rem;
   margin-bottom: 2.5rem;
+  flex-wrap: wrap;
 }
 
 .pi-header img {
   width: 220px;
   height: auto;
   object-fit: contain;
+  border-radius: 6px;
 }
 
 .pi-name {
@@ -35,7 +38,7 @@ layout: default
   font-size: 1.1rem;
   color: #555;
   margin-top: 0.3rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .pi-section {
@@ -46,21 +49,13 @@ layout: default
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.4rem;
   margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
-.pi-section p,
-.pi-section li {
+.pi-section p {
   font-size: 1rem;
-  line-height: 1.6;
-}
-
-.pi-section ul {
-  padding-left: 1.2rem;
-}
-
-.pi-subtitle {
-  font-weight: 600;
-  margin-top: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 </style>
 
@@ -68,99 +63,60 @@ layout: default
 
   <!-- ================= HEADER ================= -->
   <div class="pi-header">
-    <img src="{{ site.baseurl }}/static/img/members/DrPeng.png" alt="Dr. Gang Peng">
+    <img
+      src="{{ '/static/img/members/DrPeng.png' | relative_url }}"
+      alt="Dr. Gang Peng">
 
     <div>
       <div class="pi-name">Dr. Gang Peng</div>
       <div class="pi-title">
         Principal Investigator<br>
         Assistant Professor<br>
-        Indiana University School of Medicine (since 09/01/2022)
+        Indiana University School of Medicine<br>
+        <span style="font-size: 0.95rem;">(since September 1, 2022)</span>
       </div>
     </div>
   </div>
 
-  <!-- ================= BIO ================= -->
+  <!-- ================= BIOGRAPHY ================= -->
   <div class="pi-section">
     <h2>Biography</h2>
+
     <p>
-      Dr. Gang Peng is the Principal Investigator of the Peng Bioinformatics Lab.
-      His research focuses on computational genomics, epigenomics, and integrative
-      analysis of large-scale biomedical data, with applications in aging,
-      cancer, and population health.
+      I am a bioinformatics researcher at the Indiana University School of
+      Medicine, where I support interdisciplinary research through the
+      development and application of computational methods for large-scale
+      biomedical data analysis. I serve as the Director of Bioinformatics at
+      the Indiana Center for Musculoskeletal Health and as Co-Director of the
+      Collaborative Metabolome Core at the Indiana University School of Medicine.
     </p>
-  </div>
 
-  <!-- ================= EDUCATION ================= -->
-  <div class="pi-section">
-    <h2>Education & Training</h2>
+    <p>
+      I received my Ph.D. under the mentorship of Dr. Wenyi Wang at the
+      MD Anderson Cancer Center and UTHealth Graduate School of Biomedical
+      Sciences. I completed my postdoctoral training under the supervision of
+      Drs. Hongyu Zhao and Curt Scharfe at the Yale School of Public Health and
+      Yale School of Medicine. I then continued my research as a research
+      faculty member at Yale before joining Indiana University School of
+      Medicine in September 2022.
+    </p>
 
-    <div class="pi-subtitle">Postdoctoral Training</div>
-    <ul>
-      <li>
-        Yale School of Public Health — Postdoctoral Fellow<br>
-        Biostatistics and Bioinformatics (06/30/2018)
-      </li>
-    </ul>
+    <p>
+      I am particularly interested in epigenetic regulation, aging, and
+      disease-related molecular signatures. My research experience includes
+      DNA methylation analysis, epigenetic clock development, and the analysis
+      of high-throughput sequencing data from both bulk and single-cell
+      platforms. In addition, I have extensive experience building
+      reproducible bioinformatics pipelines and developing data infrastructure
+      to support translational and population-level research.
+    </p>
 
-    <div class="pi-subtitle">Graduate Education</div>
-    <ul>
-      <li>
-        The University of Texas Graduate School of Biomedical Sciences — Ph.D.<br>
-        Biostatistics, Bioinformatics, and Systems Biology (08/19/2015)
-      </li>
-    </ul>
+    <p>
+      Through my work, I aim to bridge computational methods and biomedical
+      discovery, contributing to collaborative research that advances
+      precision medicine and improves human health.
+    </p>
 
-    <div class="pi-subtitle">Undergraduate Education</div>
-    <ul>
-      <li>
-        Fudan University — B.S.<br>
-        Physics (06/30/2005)
-      </li>
-    </ul>
-  </div>
-
-  <!-- ================= APPOINTMENTS ================= -->
-  <div class="pi-section">
-    <h2>Academic Appointments</h2>
-    <ul>
-      <li>
-        Indiana University School of Medicine — Assistant Professor<br>
-        09/01/2022 – Present
-      </li>
-      <li>
-        Yale School of Public Health — Associate Research Scientist<br>
-        07/01/2018 – 08/31/2022
-      </li>
-    </ul>
-  </div>
-
-  <!-- ================= INVITED TALKS ================= -->
-  <div class="pi-section">
-    <h2>Invited Research Presentations</h2>
-
-    <div class="pi-subtitle">Local</div>
-    <ul>
-      <li>Application of Methylation Analysis — IUSM (Oct 10, 2022)</li>
-      <li>Epigenetic Age of Human and Mouse — IUSM (Nov 16, 2022)</li>
-      <li>Patterns of DNA Methylation Change with Age — IUSM (Apr 18, 2025)</li>
-      <li>More Is Not Always Better: Exercise Level and Health — IUSM (Nov 12, 2025)</li>
-    </ul>
-
-    <div class="pi-subtitle">Regional</div>
-    <ul>
-      <li>Epigenetic Age in Cancer — University of Cincinnati (Oct 24, 2023)</li>
-      <li>Patterns of DNA Methylation Change with Age — Geroscience (Jun 18, 2025)</li>
-    </ul>
-
-    <div class="pi-subtitle">International</div>
-    <ul>
-      <li>Epigenetic Age & DNA Methylation — ICIBM 2024</li>
-      <li>Patterns of DNA Methylation Change — ICIBM 2025</li>
-      <li>Nanopore vs EPIC Array — ICIBM 2025</li>
-      <li>Exercise & Musculoskeletal Disease — ASBMR 2025</li>
-      <li>All of Us Research Program — Cancer Cachexia Society 2025</li>
-    </ul>
   </div>
 
 </div>
