@@ -1,32 +1,138 @@
----
-title: Teaching of Prof Peng
-layout: default
-group: teaching
----
+<div style="margin-left: 30px; margin-top: 20px;">
 
-# Teaching
+<table style="border-collapse: collapse; width: 95%; table-layout: auto;">
 
-## Graduate Teaching Assignments
+  <thead>
+    <tr>
+      <th style="padding: 8px 20px; text-align: left;">Course #</th>
+      <th style="padding: 8px 20px; text-align: left;">Title</th>
+      <th style="padding: 8px 40px; text-align: left;">Format</th>
+      <th style="padding: 8px 40px; text-align: left;">Term</th>
+    </tr>
+  </thead>
 
-| Course # | Title | Format | Term |
-|----------|-------|--------|------|
-| G888 / G889 | Single-cell and Spatial Omics | In Person | 2025 Fall |
-| Q581 | Quantitative Biomedical Science | In Person | 2025 Fall |
-| C851 | Cancer Genomics, Metabolomics | In Person | 2025 Fall |
-| G848 | Bioinformatics, Genomics, Proteomics and Systems Biology | In Person | 2025 Spring |
-| G788 | Next Generation Sequencing | In Person | 2025 Spring |
-| B519 | Introduction to Bioinformatics | In Person | 2024 Fall |
-| X630 | Molecules to Cells and Tissues | In Person | 2024 Fall |
-| Q581 | Quantitative Biomedical Science | In Person | 2024 Fall |
-| C851 | Cancer Genomics, Metabolomics | In Person | 2024 Fall |
-| G819 | Basic Bone Biology | In Person | 2024 Spring |
-| G848 | Bioinformatics, Genomics, Proteomics and Systems Biology | In Person | 2024 Spring |
-| G788 | Next Generation Sequencing | In Person | 2024 Spring |
-| X630 | Molecules to Cells and Tissues | In Person | 2023 Fall |
-| Q581 | Quantitative Biomedical Science | In Person | 2023 Fall |
-| C851 | Cancer Genomics, Metabolomics | In Person | 2023 Fall |
-| G716 | Molecular Biology and Genetics | In Person | 2023 Fall |
-| G888 | Single-cell and Spatial Omics | In Person | 2023 Fall |
-| G848 | Bioinformatics, Genomics, Proteomics and Systems Biology | In Person | 2023 Spring |
-| G788 | Next Generation Sequencing | In Person | 2023 Spring |
-| Q581 | Quantitative Biomedical Science | In Person | 2022 Fall |
+  <tbody>
+    <tr>
+      <td style="padding: 8px 20px;">G888 / G889</td>
+      <td style="padding: 8px 20px;">Single-cell and Spatial Omics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2025 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">Q581</td>
+      <td style="padding: 8px 20px;">Quantitative Biomedical Science</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2025 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">C851</td>
+      <td style="padding: 8px 20px;">Cancer Genomics, Metabolomics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2025 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G848</td>
+      <td style="padding: 8px 20px;">Bioinformatics, Genomics, Proteomics and Systems Biology</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2025 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G788</td>
+      <td style="padding: 8px 20px;">Next Generation Sequencing</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2025 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">B519</td>
+      <td style="padding: 8px 20px;">Introduction to Bioinformatics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">X630</td>
+      <td style="padding: 8px 20px;">Molecules to Cells and Tissues</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">Q581</td>
+      <td style="padding: 8px 20px;">Quantitative Biomedical Science</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">C851</td>
+      <td style="padding: 8px 20px;">Cancer Genomics, Metabolomics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G819</td>
+      <td style="padding: 8px 20px;">Basic Bone Biology</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G848</td>
+      <td style="padding: 8px 20px;">Bioinformatics, Genomics, Proteomics and Systems Biology</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G788</td>
+      <td style="padding: 8px 20px;">Next Generation Sequencing</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2024 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">X630</td>
+      <td style="padding: 8px 20px;">Molecules to Cells and Tissues</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">Q581</td>
+      <td style="padding: 8px 20px;">Quantitative Biomedical Science</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">C851</td>
+      <td style="padding: 8px 20px;">Cancer Genomics, Metabolomics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G716</td>
+      <td style="padding: 8px 20px;">Molecular Biology and Genetics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G888</td>
+      <td style="padding: 8px 20px;">Single-cell and Spatial Omics</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Fall</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G848</td>
+      <td style="padding: 8px 20px;">Bioinformatics, Genomics, Proteomics and Systems Biology</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">G788</td>
+      <td style="padding: 8px 20px;">Next Generation Sequencing</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2023 Spring</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 20px;">Q581</td>
+      <td style="padding: 8px 20px;">Quantitative Biomedical Science</td>
+      <td style="padding: 8px 40px;">In Person</td>
+      <td style="padding: 8px 40px;">2022 Fall</td>
+    </tr>
+  </tbody>
+
+</table>
+</div>
