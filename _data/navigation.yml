@@ -22,6 +22,10 @@
   link: "/join"
   group: join
 
+- name: Lab Blog
+  link: "/lab-blog"
+  group: blog
+
 - name: Contact
   link: "/contact"
   group: contact

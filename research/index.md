@@ -4,7 +4,11 @@ layout: default
 group: research
 ---
 <div class="mx-auto" style="max-width: 1000px; padding: 2rem 1rem;">
-# Our research
-The long-term goals of our research are to understand how protein conformational ensembles are reshaped by chemical, genetic, and physical perturbations. We seek to quantify how these perturbations impact protein function and organismal fitness. We are best known for creating multitemperature X-ray data collection approaches, which are especially powerful when paired with multiconformer computational modeling to reveal otherwise inaccessible features of conformational ensembles. Our group integrates high resolution structural biology (X-ray, EM, NMR), functional studies (deep mutational scanning, enzymology), and computation to study biological mechanisms and to improve protein engineering and small molecule discovery. Group members move fluidly between computation and experiment, often inventing new methods to answer their questions.
+
+Our research centers on the development and application of computational and statistical methods for analyzing large-scale biomedical data, with a focus on integrative multi-omics analysis. We design and implement bioinformatics pipelines for genomics, epigenomics, transcriptomics, and metabolomics data, emphasizing reproducibility, scalability, and rigorous quality control.
+
+A major component of our work involves epigenomic analysis, particularly DNA methylation–based modeling and integrative frameworks that link epigenetic variation with gene expression, metabolic profiles, and clinical phenotypes. We apply population-scale and disease-focused study designs, leveraging high-throughput sequencing and array-based platforms to identify molecular signatures and biomarkers associated with aging, disease, and complex traits.
+
+Methodologically, our research integrates statistical modeling, data harmonization, and cross-modal data integration, often in collaboration with clinical and experimental teams. By combining robust computational workflows with translational study designs, our work aims to enable precise, interpretable, and clinically relevant insights from complex biomedical datasets at the Indiana University School of Medicine.
 
 </div>
