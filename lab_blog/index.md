@@ -1,7 +1,9 @@
+---
+title: Lab Blog
+layout: default
+group: lab_blog
+---
 
-<div class="mx-auto" style="max-width: 1000px; padding: 2rem 1rem;">
+# Lab Blog
 
-  #  Coming Soon !!
-  
-  
-  </div>
+Content coming soon...
