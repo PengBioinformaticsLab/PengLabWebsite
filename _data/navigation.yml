@@ -23,7 +23,7 @@
   group: join
 
 - name: Lab Blog
-  link: "/lab-blog"
+  link: "/labblog"
   group: blog
 
 - name: Contact
