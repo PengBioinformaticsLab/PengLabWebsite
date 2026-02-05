@@ -72,15 +72,16 @@ section,
 }
 
 /* ===========================
-   Member image (NO CROPPING)
+   Member image (UNIFORM SIZE for all members)
    =========================== */
 .member-row img {
-  width: 180px;
-  height: auto;
-  max-height: 260px;
-  object-fit: contain;
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
   margin-right: 1.8rem;
   display: block;
+  border-radius: 4px;
 }
 
 /* ===========================
@@ -136,7 +137,7 @@ section,
 }
 
 /* ===========================
-   PI specific styling (CENTERED)
+   PI specific styling (CENTERED & LARGER)
    =========================== */
 .pi-row {
   flex-direction: column;
@@ -146,6 +147,10 @@ section,
 
 .pi-row img {
   margin: 0 auto 1rem;
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .pi-row .member-info {
@@ -233,7 +238,7 @@ section,
 <!-- ================= High School Students ================= -->
 <h2>High School Students</h2>
 <div class="member-row">
-  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="Undergraduate student photo">
+  <img src="{{ site.baseurl }}/static/img/members/Man_blank.jpg" alt="High School student photo">
   <div class="member-info">
     <div class="member-name">Wenshu Wang</div>
     <div class="member-dates">05/2024 – Present</div>
